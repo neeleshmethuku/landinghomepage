@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 800px; */
+  /* font-style: normal; */
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;  
+    background-color: #000;
+    border: 1px solid #fff;
+}
+.logo{
+    width: auto;
+    color: #FFA500;
+    display:flex;
+}
+.links{
+    display:list-item;
+    
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    
+}
+li{
+    display: inline;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 14px 16px;
+    /* border: 1px solid #00f; */
+}
+li a:hover{
+    color: #FFA500;
+    /* border: 1px solid #fff; */
+
+}
+.active{
+    /* color: #00f; */
+    color: #FFA500;
+}
+
+/* ------------------------Carousel---------------  */
+.carousel {
+    position: relative;
+    max-width: 1000px;
+    max-height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .slide img {
+    max-width: 100%; /* Ensure images don't exceed the width of the carousel */
+    max-height: 100%; /* Ensure images don't exceed the height of the carousel */
+    display: block; /* Remove any potential whitespace under the image */
+    margin: 0 auto; /* Center the image horizontally within the slide */
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .indicators {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: white;
+  }
+  @media only screen and (max-width:600px){
+    .carousel{
+        
+
+    }
+}
+
+
+
+/* -------------------top-box------------------- */
+.about-us{
+    width:100%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.about-col{
+    /* flex-basis: 48%; */
+    padding: 30px 30px;
+}
+/* .content{
+	padding: 75px 25px 25px;
+} */
+.about-col h1{ 
+	font-size: 2.2em;
+}
+.about-col p{
+    padding: 15px 0 25px;
+	text-align: justify;
+    line-height: 22px;
+}
+.button{
+	display: inline-block;
+    text-decoration: none;
+    color: #000;
+    padding: 12px 34px;
+    font-size: 13px;
+    background:#ff4d54;
+    /* background:#FF1A23; */
+    position: relative;
+    cursor: pointer;
+}
+.button:hover{
+    background:#FF8085;
+    transition: 1s;
+}
+.btn{
+	display:flex;
+    text-decoration: none;
+    color: #000;
+    padding:20px 30px ;
+    font-size: 20px;
+    background:#ccc;
+    position: relative;
+    cursor: pointer;
+    width: 350px;
+}
+.btn:hover{
+    background: #ff4d54;
+    transition: 1s;
+}
+@media only screen and (max-width:600px){
+    .row{
+        display:grid;
+
+    }
+}
+
+
+
+
+/* footer */
+.footer{
+    width:100%;
+    margin:auto;
+    background: #000;
+    padding: 30px 30px;
+}
+.footer-content{
+    display:flex;
+    justify-content: space-between;
+}
+.footer-content li{
+    width: auto;
+    list-style-type: none;
+    position: relative;
+}
+.footer-content a{
+    text-decoration: none;
+    color: #8b929a	;
+    display: block;
+}
+.footer-content a:hover{
+    color: #555;
+    transition: 0.5s;
+}
+h3{
+    color: #fff;
+    /* text-align:center; */
+}
+/* 
+.bottom-bar{
+    text-align:right;
+    margin-top: auto;
+    color: #ccc;
+
+} */
+.whatapp_main{
+    width:40%;
+    position: fixed;
+    bottom: 42px;
+    right: 20px;
+    text-align: right;
+    z-index: 10;
+}
+@media only screen and (max-width:600px){
+    .whatapp_main{
+        width:90%;
+    }
+}
+    
+
+
+
+/* .footer-content a i{
+    font-size: 2em;
+    opacity: 0.9;
+} */
